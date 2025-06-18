@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squirrel Census Project Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(to right, #4b6cb7, #182848);
+        }
+        .visualization-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .visualization-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header Section -->
+    <header class="hero-bg text-white py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">2018 Central Park Squirrel Census</h1>
+            <p class="text-xl">A Data Analytics Portfolio Project</p>
+            <p class="mt-2 text-lg">Exploring squirrel behaviors and spatial patterns in Central Park, NYC</p>
+        </div>
+    </header>
+
+    <!-- Project Overview Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Project Overview</h2>
+            <div class="max-w-3xl mx-auto text-gray-700">
+                <p class="mb-4">This project analyzes the <strong>2018 Central Park Squirrel Census</strong> dataset, capturing observations of squirrels in New York City's Central Park. The dataset includes details on squirrel behaviors, physical characteristics, and spatial-temporal data.</p>
+                <p class="mb-4">Key objectives include cleaning the dataset, performing exploratory data analysis (EDA), and creating visualizations to uncover patterns in squirrel behaviors and distribution. This project showcases skills in Python, Pandas, Seaborn, Folium, and statistical analysis, tailored for data analytics roles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Findings Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Key Findings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Behavioral Patterns</h3>
+                    <p>Foraging and eating are the most common behaviors, with juveniles showing higher foraging activity compared to adults. Gray squirrels dominate in chasing activities.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Spatial Distribution</h3>
+                    <p>Squirrels are concentrated in specific plots, with higher activity in southern Central Park. Choropleth maps highlight these hotspots effectively.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Statistical Insights</h3>
+                    <p>Weak correlation between plot number and ground sighting measurements. AM shifts show slightly higher activity than PM shifts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visualizations Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Visualizations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="visualization-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Behavior by Age</h3>
+                    <p>Stacked bar plot showing the distribution of behaviors (e.g., foraging, running) across age groups (juvenile, adult).</p>
+                    <div class="bg-gray-200 h-48 flex items-center justify-center">
+                        <p class="text-gray-500">[Placeholder for Bar Plot]</p>
+                    </div>
+                </div>
+                <div class="visualization-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Choropleth Map</h3>
+                    <p>Interactive map displaying squirrel counts by plot number, highlighting high-density areas in Central Park.</p>
+                    <div class="bg-gray-200 h-48 flex items-center justify-center">
+                        <p class="text-gray-500">[Placeholder for Folium Map]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 hero-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+            <p class="mb-4">Interested in this project or my data analytics work? Reach out to discuss opportunities!</p>
+            <div class="max-w-md mx-auto">
+                <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 rounded-lg text-gray-800">
+                <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-lg text-gray-800">
+                <textarea placeholder="Your Message" class="w-full p-3 mb-4 rounded-lg text-gray-800 h-32"></textarea>
+                <button class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Squirrel Census Portfolio. All rights reserved.</p>
+            <p class="mt-2">Built with Tailwind CSS | <a href="https://github.com/yourusername" class="underline">View on GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
